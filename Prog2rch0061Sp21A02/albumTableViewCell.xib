@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" editingAccessoryType="disclosureIndicator" rowHeight="132" id="aRO-Sb-SV2" customClass="AlbumTableViewCell" customModule="Prog2rch0061Sp21A02" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aRO-Sb-SV2" id="5GB-iQ-oNB">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aQ2-4z-6oH">
+                        <rect key="frame" x="7" y="2" width="128" height="128"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="album" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vm-Jx-KNY">
+                        <rect key="frame" x="143" y="9" width="271" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="271" id="2NM-hI-kET"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccq-pX-Ul2">
+                        <rect key="frame" x="143" y="38" width="271" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="271" id="jXd-lf-n3t"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnV-BV-bZd">
+                        <rect key="frame" x="143" y="67" width="271" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="271" id="hQn-Gq-ZGd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="record label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQS-Wb-nZe">
+                        <rect key="frame" x="143" y="96" width="271" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="271" id="vky-E4-Qsx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PnV-BV-bZd" secondAttribute="trailing" id="140-WK-z8U"/>
+                    <constraint firstItem="7vm-Jx-KNY" firstAttribute="leading" secondItem="aQ2-4z-6oH" secondAttribute="trailing" constant="8" symbolic="YES" id="4t9-hQ-mvo"/>
+                    <constraint firstItem="aQ2-4z-6oH" firstAttribute="leading" secondItem="5GB-iQ-oNB" secondAttribute="leading" constant="7" id="CGb-6Z-atW"/>
+                    <constraint firstItem="HQS-Wb-nZe" firstAttribute="top" secondItem="PnV-BV-bZd" secondAttribute="bottom" constant="8" symbolic="YES" id="Cfx-KY-AJ0"/>
+                    <constraint firstAttribute="trailing" secondItem="7vm-Jx-KNY" secondAttribute="trailing" id="FNQ-oz-5Wj"/>
+                    <constraint firstAttribute="bottom" secondItem="HQS-Wb-nZe" secondAttribute="bottom" constant="15" id="JNi-8O-FmO"/>
+                    <constraint firstItem="PnV-BV-bZd" firstAttribute="top" secondItem="ccq-pX-Ul2" secondAttribute="bottom" constant="8" symbolic="YES" id="Lpx-Hd-2Av"/>
+                    <constraint firstAttribute="trailing" secondItem="ccq-pX-Ul2" secondAttribute="trailing" id="NWB-JN-3Q6"/>
+                    <constraint firstAttribute="bottom" secondItem="aQ2-4z-6oH" secondAttribute="bottom" constant="2" id="NcS-MM-dEi"/>
+                    <constraint firstItem="HQS-Wb-nZe" firstAttribute="leading" secondItem="aQ2-4z-6oH" secondAttribute="trailing" constant="8" symbolic="YES" id="QBc-EP-OV7"/>
+                    <constraint firstItem="ccq-pX-Ul2" firstAttribute="leading" secondItem="aQ2-4z-6oH" secondAttribute="trailing" constant="8" symbolic="YES" id="YC4-1F-z9d"/>
+                    <constraint firstItem="aQ2-4z-6oH" firstAttribute="top" secondItem="5GB-iQ-oNB" secondAttribute="top" constant="2" id="Ywl-9P-aQs"/>
+                    <constraint firstAttribute="trailing" secondItem="HQS-Wb-nZe" secondAttribute="trailing" id="YyV-Nd-TQ1"/>
+                    <constraint firstItem="ccq-pX-Ul2" firstAttribute="top" secondItem="7vm-Jx-KNY" secondAttribute="bottom" constant="8" symbolic="YES" id="ZZt-Tm-Iyr"/>
+                    <constraint firstItem="PnV-BV-bZd" firstAttribute="leading" secondItem="aQ2-4z-6oH" secondAttribute="trailing" constant="8" symbolic="YES" id="hM3-pe-Hex"/>
+                    <constraint firstItem="7vm-Jx-KNY" firstAttribute="top" secondItem="5GB-iQ-oNB" secondAttribute="top" constant="9" id="viZ-fO-Hdi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="albumArt" destination="aQ2-4z-6oH" id="HmP-P9-nhG"/>
+                <outlet property="albumLabel" destination="7vm-Jx-KNY" id="gtB-Sp-Nqc"/>
+                <outlet property="artistLabel" destination="ccq-pX-Ul2" id="BrQ-VI-GTv"/>
+                <outlet property="recordLabelLabel" destination="HQS-Wb-nZe" id="hrT-m9-UJe"/>
+                <outlet property="yearLabel" destination="PnV-BV-bZd" id="JfF-Yk-0Nd"/>
+            </connections>
+            <point key="canvasLocation" x="211.59420289855075" y="84.375"/>
+        </tableViewCell>
+    </objects>
+</document>
